@@ -21,9 +21,10 @@ app.use(express.static("public"));
 //require("./routes/api-routes.js")(app);
 //require("./routes/html-routes.js")(app);
 
+//|| "mongodb://localhost/workoutnew"
+//process.env.MONGODB_URI
 
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutnew", { useNewUrlParser: true });
+mongoose.connect( "mongodb+srv://dimonya:eblan1@dmitricluster-ke366.mongodb.net/workout?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 //db.workout.create({ name: "Workout FUNN" })
  // .then(dbexersise => {
