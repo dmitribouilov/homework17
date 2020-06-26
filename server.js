@@ -24,7 +24,7 @@ app.use(express.static("public"));
 //|| "mongodb://localhost/workoutnew"
 //process.env.MONGODB_URI
 
-mongoose.connect( "mongodb+srv://dimonya:eblan1@dmitricluster-ke366.mongodb.net/workout?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect( process.env.MONGODB_URI, { useNewUrlParser: true });
 
 //db.workout.create({ name: "Workout FUNN" })
  // .then(dbexersise => {
